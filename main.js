@@ -1,6 +1,12 @@
-const PORT = 'https://json-api-nu.vercel.app/'
+const PORT = 'https://json-api-nu.vercel.app'
 const myList = document.body.querySelectorAll("ul li")
 const clostBtn = document.querySelector(".closeListIndex");
+
+
+const carticon = document.querySelector(".cart-icon");
+carticon.addEventListener('click',function (){
+    alert("Please click me on shop page")
+})
 myList.forEach((ele) => {
     ele.onclick = () => {
         removeActive()
@@ -46,7 +52,7 @@ function removeActive() {
 localStorage.removeItem("CartItems")
 let burgersObject = [];
 function fetchData() {
-    fetch(`${PORT}catergories`).then(response => {
+    fetch(`${PORT}/catergories`).then(response => {
         if (!response.ok) {
             throw new Error("Network response was not ok " + response.statusText);
         }

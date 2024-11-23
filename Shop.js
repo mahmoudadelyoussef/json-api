@@ -1,4 +1,4 @@
-const PORT = 'https://json-api-nu.vercel.app/'
+const PORT = 'https://json-api-nu.vercel.app'
 
 const catCls = document.querySelector(".catCls");
 const titleSection = document.querySelector(".titleSection");
@@ -11,7 +11,7 @@ const finalPrice = document.querySelector(".finalPrice");
 async function getCat(myData) {
 
     if (localStorage.getItem("CatResults") == null) {
-        const res = await fetch(`${PORT}catergories`);
+        const res = await fetch(`${PORT}/catergories`);
         let result = await res.json();
 
         localStorage.setItem("CatResults", JSON.stringify(result))
