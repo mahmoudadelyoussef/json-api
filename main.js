@@ -1,4 +1,4 @@
-const PORT = 'semi-final-project-indol.vercel.app/'
+const PORT = 'https://json-api-nu.vercel.app/'
 const myList = document.body.querySelectorAll("ul li")
 const clostBtn = document.querySelector(".closeListIndex");
 myList.forEach((ele) => {

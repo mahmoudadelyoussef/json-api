@@ -1,4 +1,4 @@
-const PORT = 'semi-final-project-indol.vercel.app/'
+const PORT = 'https://json-api-nu.vercel.app/'
 
 const catCls = document.querySelector(".catCls");
 const titleSection = document.querySelector(".titleSection");
