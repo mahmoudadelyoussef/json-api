@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/shop.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <main>
+      <div class="bigContainer">
+        <nav>
+          <h1>
+            <img src="./assets/images/logo.png" alt="" />
+          </h1>
+          <ul>
+            <li>
+              <a href="./Index.html">Home</a>
+            </li>
+            <li>
+              <a href="./Shop.html">ABOUT</a>
+            </li>
+            <li>
+              <a class="active" href="./Shop.html">SHOP</a>
+            </li>
+            <li>
+              <a href="./Contact.html">CONTACT US </a>
+            </li>
+          </ul>
+          <span class="desktop">
+            <i class="fa-solid fa-bars"></i>
+          </span>
+          <div class="icons-navBar">
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping" ></i>
+            <i class="fa-solid fa-cart-shopping cart-icon" onclick="showCart()">
+              <span class="cart-counter">0</span>
+          </i>
+          </div>
+          <div class="closeList closeListIndex">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </nav>
+        <div class="shopTitle">
+          <p>Home - Shop</p>
+        </div>
+      </div>
+
+      <section class="titleSection">
+        <p>Shop by category</p>
+        <p>Shop by category</p>
+      </section>
+
+      <section class="catCls"></section>
+
+      <div class="burgersSection">
+        <div class="mostSesslingDiv">
+          <p>MOST SELLING</p>
+          <p>MOST SELLING</p>
+        </div>
+        <div class="burgersCards">
+          <div class="burgerCard" style="display: block">
+            <div class="burgerImageContainer">
+              <div class="icons-navBar-Burger">
+                <i class="fa-solid fa-heart"></i>
+              </div>
+              <img src="./assets/images/burger.jpeg" alt="" />
+            </div>
+
+            <div class="priceAndRate">
+              <label for="">150EGP</label>
+              <div class="rate">
+                <i class="fa-solid fa-star"></i>
+                <p for="">4.5</p>
+              </div>
+            </div>
+            <div class="lineDiv"></div>
+            <div class="sandText">
+              <p>Pork Chop with Apple Chutney</p>
+            </div>
+
+            <div class="sandwitchDesc">
+              <div class="sandwitchDeatils">
+                <i class="fa-regular fa-circle-check"></i>
+                <p for="">4 Pieces</p>
+              </div>
+              <div class="sandwitchDeatils">
+                <i class="fa-regular fa-circle-check"></i>
+                <p for="">Spicy Sauce</p>
+              </div>
+            </div>
+            <div>
+              <button class="AddFavBtn">Add To Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="cartParent" style="display: none">
+        <h1>ITEMS IN CART</h1>
+        <div class="displayCartData">
+          <div class="CartPart"></div>
+          <div class="CheckOuttPart">
+            <div class="checkOutDiv">
+              <div class="dataDiv">
+                <div class="total">
+                  <p>Total</p>
+                  <p class="finalPrice">450</p> 
+                </div>
+                <div class="total">
+                  <p>Shipping</p>
+                  <p>Free</p>
+                </div>
+              </div>
+              <hr />
+              <div class="checkOutDivBTN">
+                <button>CheckOut</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./Shop.js"></script>
+  </body>
+</html>

@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+    opacity: 0.5;
+}
+@font-face {
+    font-family: 'Poppins';
+    src:url(../Fonts/Poppins/Poppins/Poppins-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+ 
+@font-face {
+    font-family: 'Fibre Vintage';
+    src: url('../Fonts/FibreVintage/fibre-font.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+body {
+    background-image: url(../images/darkbg.png);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    /* background-position: center; */
+    background-size: cover;
+}
+.closeList{
+    display: none;
+}
+.closeListIndex{
+    z-index: 1;
+}
+.closeListIndex{
+    font-size: 2em;
+    color: white;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 6rem;
+    background-color: rgb(199 199 206 / 50%);
+    position: relative;
+    height: 71px;
+    background: transparent;
+    /* padding: 3em; */
+    z-index: 1;
+}
+.cart-icon {
+    position: relative;
+    /* font-size: 24px; Adjust icon size */
+  }
+  .cart-counter{
+    position: absolute;
+    bottom: 1.7em;
+    left: 1.7em;
+    /* border: 1px solid red; */
+    border-radius: 50%;
+    padding: 0.8em;
+    background: red;
+    height: 1em;
+    width: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* .cart-icon::after {
+    content: "3";  
+    position: absolute;
+    top: -8px;  
+    right: -10px;
+    background-color: red;
+    color: white;
+     padding: 2px 6px;
+    border-radius: 50%;
+    font-weight: bold;
+    line-height: 1;
+  } */
+  
+h1 img {
+    width: 71px;
+    height: 71px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav ul li {
+    /* opacity: 0.5; */
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+}
+
+nav ul li:hover {
+    cursor: pointer;
+}
+ 
+.active {
+    opacity: 1;
+    
+}
+
+.desktop {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.visibiltyCls {
+    visibility: visible !important;
+}
+
+.icons-navBar {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons-navBar i {
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 1em;
+}
+
+.mainSection::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Adjust the color and opacity */
+    z-index: 0;
+}
+
+.bigContainer{
+    /* background-image: url(../images/burger.jpeg); */
+    background-repeat: no-repeat;
+    object-fit: cover;
+    /* background-position: center; */
+    background-size: cover;
+    
+}
+
+.mainSection>* {
+    position: relative;
+    /* z-index: 1;   */
+}
+
+.mainSection {
+    height: 81vh;
+ 
+    /* opacity: 0.8; */
+}
+
+.mainPara {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1em;
+    color: white;
+    text-transform: uppercase;
+    padding-top: 3em;
+}
+
+.miniParaP{
+    font-family: 'Fibre Vintage', sans-serif;
+    font-size: 86px;
+}
+
+
+
+.reservationTxt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.divExploerBtn {
+    overflow: hidden;
+    border-radius: 30px;
+    background-color: rgba(214, 40, 40, 1);
+    padding: 1em;
+    outline: 2px solid beige;
+    /* opacity: 0.5; */
+}
+
+.divExploerBtn:hover {
+    cursor: pointer;
+}
+
+.exploerBTn:hover {
+    cursor: pointer;
+}
+
+.exploerBTn {
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+
+.icons-navBar-Burger {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:0.5em;
+    left:   1em;
+    overflow: hidden;
+}
+
+.icons-navBar-Burger i {
+    color: red;
+    border: 1px solid red;
+    border-radius: 50%;
+    padding: 1em;
+}
